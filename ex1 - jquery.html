@@ -1,0 +1,81 @@
+<head>
+    <title>Pale Blue Dot</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+
+
+        function nightDayHandler(self) {
+
+            if (self.value === 'night') {
+
+                body.setBackgroundColor('black')
+                body.setColor('white')
+                self.value = 'day'
+                links.setColor('powderblue')
+            }
+            else {
+
+                body.setBackgroundColor('white')
+                body.setColor('black')
+                self.value = 'night';
+                links.setColor('violet')
+            }
+
+
+    </script>
+
+</head>
+<h1><a href="ex2.html">
+        Pale Blue Dot
+    </a></h1>
+
+<body>
+    <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+    ">
+
+    <ul><a href="ex3.html">
+            <script>
+            var series = ["1편", "2편", "3편"]
+            var n = 0
+            while (n < series.length) {
+                document.write(series[n] + '. ' + '</br>')
+                n = n + 1
+            }
+
+            </script>
+
+
+
+        </a></ul>
+
+    <script>
+            body.showSetColor = function () {
+                for (var key in this) {
+                    if (key === 'setColor') {
+                        document.write(key + ' : ' + this[key] + '<br>')
+                    }
+                }
+            }
+
+            body.showSetColor()
+    </script>
+
+
+
+    <p>
+        </br>Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, <br>
+        everyone you ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and<br>
+        suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every<br>
+        hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in<br>
+        love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt<br>
+        politician, every "superstar," every "supreme leader," every saint and sinner in the history of our species<br>
+        lived there--on a mote of dust suspended in a sunbeam.<br>
+    </p>
+
+    <input type="button" value="night" onclick="
+nightDayHandler(this);
+    ">
+
+</body>
